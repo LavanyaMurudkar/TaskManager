@@ -1,0 +1,162 @@
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+}
+
+/* Main Container */
+.container {
+  width: 600px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Title */
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Input Container */
+.input-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+/* Bigger Text Input */
+input {
+  width: 100%;
+  height: 50px; /* Increased height */
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Buttons */
+button {
+  padding: 14px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
+
+/* Add Task Button */
+.add-btn {
+  background: #28a745;
+  color: white;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.add-btn:hover {
+  background: #218838;
+}
+
+/* Task List */
+.task-list {
+  list-style: none;
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* Task Item */
+.task-item {
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.task-item:hover {
+  transform: scale(1.05);
+}
+
+/* Task Text */
+.task-text {
+  flex: 1;
+  font-size: 18px;
+  color: white;
+}
+
+/* Task Buttons */
+.task-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+/* Complete Button */
+.complete-btn {
+  background: #ffc107;
+  color: black;
+}
+
+.complete-btn:hover {
+  background: #e0a800;
+}
+
+/* Encouragement Message */
+.message {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f8f9fa;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+/* Removed line-through effect when clicking the motivational message */
+.message:active {
+  text-decoration: none;
+  opacity: 1;
+}
